@@ -18,7 +18,7 @@ variable "key_pair" {
 resource "aws_instance" "one" {
   count = length(var.instance_names)
 
-  ami           = "ami-06b5375e3af24939c"
+  ami           = "ami-0b6c6ebed2801a5cb"
   instance_type = "t2.medium"
   key_name      = var.key_pair
 
